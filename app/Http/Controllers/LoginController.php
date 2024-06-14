@@ -21,7 +21,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended(route('index'));
+            return redirect()->intended(route('datakriteria.index'));
         }
         return back()->withErrors("Email atau Password Salah !");
     }
