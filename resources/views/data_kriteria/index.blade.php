@@ -2,7 +2,6 @@
 @section('title', 'Data Kriteria')
 @section('content')
 <div class="card">
-
     <div class="card-header">
         @if (session()->has('errors'))
         <div class="col-12">
@@ -44,8 +43,8 @@
         </div>
     </div>
     <!-- /.card-header -->
-    <div class="card-body">
-        <table class="table table-bordered">
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
             <thead>
                 <tr>
                     <th style="width: 10px">#</th>
@@ -72,8 +71,10 @@
                     </td>
                     <td>
                         <div class="d-flex">
-                            <a href="{{ route('datakriteria.edit',$item->id) }}" class="btn btn-default btn-sm"><i class="fas fa-pencil-alt"></i></a>
-                            <form action="{{ route('datakriteria.destroy',$item->id) }}" method="POST" onclick="return confirm('Apa anda ingin mengahapus data ?');">
+                            <a href="{{ route('datakriteria.edit',$item->id) }}" class="btn btn-default btn-sm"><i
+                                    class="fas fa-pencil-alt"></i></a>
+                            <form action="{{ route('datakriteria.destroy',$item->id) }}" method="POST"
+                                onclick="return confirm('Apa anda ingin mengahapus data ?');">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-default btn-sm"><i class="fas fa-trash"></i></button>
@@ -85,7 +86,6 @@
             </tbody>
         </table>
     </div>
-
     <!-- /.card-body -->
     <div class="card-footer clearfix">
         {{ $datakriteria->links('vendor.pagination.bootstrap-4') }}

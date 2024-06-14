@@ -2,7 +2,6 @@
 @section('title', 'Data Siswa')
 @section('content')
 <div class="card">
-
     <div class="card-header">
         @if (session()->has('errors'))
         <div class="col-12">
@@ -44,8 +43,8 @@
         </div>
     </div>
     <!-- /.card-header -->
-    <div class="card-body">
-        <table class="table table-bordered">
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
             <thead>
                 <tr>
                     <th style="width: 10px">#</th>
@@ -62,7 +61,7 @@
                     <td>{{ $key+1 }}.</td>
                     <td>{{ $item->name }}</td>
                     @foreach ($item->data_kriteria as $data_kriteria)
-                        <th>{{ $data_kriteria->pivot->value }}</th>
+                    <th>{{ $data_kriteria->pivot->value }}</th>
                     @endforeach
                     <td>
                         <div class="d-flex">
@@ -81,13 +80,10 @@
             </tbody>
         </table>
     </div>
-
-    <!-- /.card-body -->
     <div class="card-footer clearfix">
         {{ $data_siswa->links('vendor.pagination.bootstrap-4') }}
     </div>
 </div>
-
 @endsection
 @push('js')
 <script>
