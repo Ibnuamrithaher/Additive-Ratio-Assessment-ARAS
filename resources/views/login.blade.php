@@ -15,13 +15,30 @@
     <link rel="stylesheet" href="{{ asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
+    <style>
+            .image-container {
+                /* position: relative;
+                overflow: hidden; */
+                width: auto;
+                /* Sesuaikan dengan ukuran gambar Anda atau bisa diatur sesuai kebutuhan */
+                height: 180px;
+                /* Contoh tinggi container, atur sesuai dengan tinggi gambar asli dikurangi beberapa pixel yang ingin dipotong */
+            }
+
+            .image-container img {
+                /* display: block;
+                position: relative; */
+                top: -20px;
+                /* Ganti dengan jumlah piksel yang ingin Anda potong dari bawah */
+            }
+        </style>
 </head>
 
 <body class="hold-transition login-page">
     <div class="login-box">
-        <div class="login-logo">
-            <img src="{{ asset('Logo MTS Darussalam.png') }}" height="250" alt="MTS Darussalam">
-            {{-- <a href="#"><b>Login</b></a> --}}
+        <div class="login-logo d-flex flex-column">
+            <img src="{{ asset('Logo MTS Darussalam.png') }}" alt="MTS Darussalam">
+            <h2>MTs Darussalam Samarinda</h2>
         </div>
         <!-- /.login-logo -->
         <div class="card">

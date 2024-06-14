@@ -45,7 +45,7 @@
                 @foreach ($datalriterias as $item)
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>{{ $item->title }}</label>
+                            <label>{{ $item->description }}</label>
                             <input type="number" min="0" step="0.01" class="form-control" name={{ $item->id }} placeholder="Enter ..." required>
                         </div>
                     </div>
