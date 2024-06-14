@@ -12,6 +12,12 @@ class ArasController extends Controller
     {
         $datakriteria = DataKriteria::all();
         $data_siswas = DataSiswa::all();
+        if (count($datakriteria) == 0) {
+            return redirect()->route('datakriteria.index')->withErrors('Silahkan isi data kriteria terlebih dahulu !');
+        } elseif (count($data_siswas) == 0) {
+            return redirect()->route('datasiswa.create')->withErrors('Silahkan isi data kriteria terlebih dahulu !');
+        }
+
         $alternatif = array();
         foreach ($data_siswas as $key => $siswa) {
             array_push($alternatif, array());
