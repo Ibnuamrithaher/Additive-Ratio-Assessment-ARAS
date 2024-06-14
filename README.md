@@ -1,64 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pendidikan merupakan hal yang terpenting dalam kehidupan manusia,ini berarti 
+bahwa setiap manusia Indonesia berhak mendapatkannya dan diharapkan untuk selalu 
+berkembang didalamnya, pendidikan tidak akan ada habisnya, pendidikan secara 
+umum mempunyai arti suatu proses kehidupan dalam mengembangkan diri tiap 
+individu untuk dapat hidup dan melangsungkan kehidupan, sehingga menjadi 
+seorang yang terdidik itu sangat penting. Manusia dididik menjadi orang yang 
+berguna baik bagi Negara, Nusa dan Bangsa. Lingkungan pendidikan pertama 
+kali yang diperoleh setiap insan yaitu di lingkungan keluarga (Pendidikan Informal), 
+lingkungan sekolah (Pendidikan Formal), dan lingkungan masyarakat (Pendidikan 
+Nonformal). Pendidikan Informal adalah pendidikan yang diperoleh seseorang dari 
+pengalaman sehari-hari dengan sadar atau tidak sadar,sejak seseorang lahir sampai 
+mati.Proses pendidikan ini berlangsung seumur hidup.Sehingga peranan keluarga itu 
+sangat penting bagi anak terutama orang tua. Orang tua mendidik anaknya dengan penuh 
+kasih sayang. Kasih sayang yang diberikan orang tua tidak ada habisnya dan terhitung 
+nilainya.Orang tua mengajarkan kepada kita hal-hal yang baik misalnya, bagaimana 
+kita bersikap sopan-santun terhadap orang lain,menghormati sesama,dan berbagi 
+dengan mereka yang kekurangan.
+Peranan pendidikan sangat besar dalam mempersiapkan dan mengembangkan 
+Sumber Daya Manusia (SDM) yang handal yang mampu bersaing secara sehat tetapi 
+juga memiliki rasa kebersamaan dengan sesama manusia meningkat. Ilmu pendidikan 
+termasuk salah satu cabang ilmu pengetahuan yang sifatnya praktis karena ilmu 
+tersebut ditujukan kepada paraktek dan perbuatan-perbuatan yang mempengaruhi 
+anak didik. Mendidik bukanlah Perbuatan sembarangan karena menyangkut 
+kehidupan dan nasib anak manusia untuk kehidupan selanjutnya, yaitu manusia 
+2
+sebagai makhluk yang bermartabat dengan hak-hak asasinya. Itulah sebabnya 
+melaksanakan pendidikan merupakan tugas moral yang tidak ringan.
+Sedemikian pentingnya pendidikan dalam upaya mencerdaskan kehidupan bangsa, 
+meningaktakan kesejahteraan masyarakat, dan membangun dan membangun martabat 
+bangsa, maka pemerintah berusaha memberikan perhatian yang sungguh-sungguh untuk 
+mengatasi berbagai masalah di bidang peningkatan pendidikan mulai dari tingkat dasar, 
+menengah, sampai tingkat tinggi. Perhatian tersebut antara lain ditujukan dengan cara 
+menyediakan alokasi anggran yang berarti. Serta membuat kebijakan-kebijakan yang 
+berkaitan dengan usaha meningkatkan mutu pendidikan. Bahkan yang lebih penting lagi 
+adalah terus melakukan berbagai macam ikhtiar guna memperluas kesempatan bagi 
+masyarakat dalam memperoleh penmdidikan pada semua jenjang yang ada.
+MTs Darussalam Samarinda sebagai salah satu lembaha Pendidikan menengah di 
+Samarinda, memili tugas penting dalam seleksi calon peserta didik baru. Proses seleksi 
+ini melibatkan sejumlah kriteria yang harus dinilai, seperti nilai bahasa Indonesia, nilai 
+matematika, nilai IPA, nilai bahasa inggris dan nilai mengaji. Pengambilan keputusan 
+dalam proses seleksi calon peserta didik baru merupakan tugas yang kompleks dan 
+memerlukan pertimbangan yang cermat.
+Pada saat yang sama, perkembangan teknologi informasi telah membuka peluang 
+untuk meningkatkan efisiensi dan akurasi dalam pengambilan keputusan. Salah satu 
+metode yang telah digunakan secara luas dalam pengambilan keputusan adalah Sistem 
+Pendukung Keputusan (SPK). SPK adalah suatu sistem yang dirancang untuk membantu 
+pengambilan keputusan dengan menyediakan informasi yang relevan dan alat analisis 
+yang diperlukan. Dalam konteks MTs Darussalam Samarinda, penggunaan SPK dapat 
+membantu MTs Darussalam Samarinda dalam mengambil keputusan untuk melakukan 
+evaluasi calon peserta didik baru secara lebih efisien dan obyektif.
+Metode Additive Ratio Assessment adalah salah satu metode dalam SPK yang 
+dapat digunakan untuk mengatasi masalah pengambilan keputusan multi-kriteria. Metode 
+ARAS memungkinkan para pengambil keputusan untuk memberikan bbot kepada setiap 
+kriteria dan kemudian menghitung peringkat kandidat berdasarkan penilaian mereka 
+terhadap setiap kriteria. Penggunaan metode ARAS dalam konteks seleksi calon peserta 
+didik aru di MTs Darussalam Samarinda akan membantu memastikan bahwa keputusan 
+3
+penerimaan didasarkan pada penilaian yang obyektif dan sesuai dengan kriteria yang 
+telah ditetapkan
+Oleh sebab itu, penelitian ini mengangkat judul “SISTEM PENDUKUNG 
+KEPUTUSAN PADA CALON PESERTA DIDIK BARU DI MTS DARUSSALAM
+MENGGUNAKAN METODE ADDITIVE RATIO ASSESSMENT (ARAS)”. Hal ini 
+bertujuan agar memudahkan pihak sekolah dalam melakukan seleksi peserta didik baru 
+dan pengelompokkan kelas berdasarkan nilai-nilai calon peserta didik baru di MTs 
+Darussalam.
