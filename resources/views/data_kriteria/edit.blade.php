@@ -26,7 +26,7 @@
             </div>
         </div>
         @endif
-        <h3 class="card-title">Tambah Data</h3>
+        <h3 class="card-title">Edit Data Kriteria</h3>
     </div>
     <!-- /.card-header -->
     <!-- form start -->
