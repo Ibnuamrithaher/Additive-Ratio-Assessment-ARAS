@@ -88,39 +88,39 @@
                         data-accordion="false">
                         @if (Auth::user()->level == "Super Admin")
                             <li class="nav-item">
-                                <a href="{{ route('users.index') }}" class="nav-link">
+                                <a href="{{ route('users.index') }}" class="nav-link {{ (request()->routeIs('users.index')) ? 'active' : '' }}">
                                     <i class="nav-icon fas fa-columns"></i>
                                     <p>Users</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('datasiswa.index') }}" class="nav-link">
+                                <a href="{{ route('datasiswa.index') }}" class="nav-link {{ (request()->routeIs('datasiswa.index')) ? 'active' : '' }}">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>Data Siswa</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('datakriteria.index') }}" class="nav-link">
+                                <a href="{{ route('datakriteria.index') }}" class="nav-link {{ (request()->routeIs('datakriteria.index')) ? 'active' : '' }}">
                                     <i class="nav-icon fas fa-book"></i>
                                     <p>Data Kriteria</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('penilaian.index') }}" class="nav-link">
+                                <a href="{{ route('penilaian.index') }}" class="nav-link {{ (request()->routeIs('penilaian.index')) ? 'active' : '' }}">
                                     <i class="nav-icon fas fa-star"></i>
                                     <p>Penilaian</p>
                                 </a>
                             </li>
                         @elseif (Auth::user()->level == "Users")
                             <li class="nav-item">
-                                <a href="{{ route('dashboard') }}" class="nav-link">
+                                <a href="{{ route('dashboard') }}" class="nav-link {{ (request()->routeIs('dashboard')) ? 'active' : '' }}">
                                     <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>Dashboard</p>
                                 </a>
                             </li>
                         @endif
                         <li class="nav-item">
-                            <a href="{{ route('aras.index') }}" class="nav-link">
+                            <a href="{{ route('aras.index') }}" class="nav-link {{ (request()->routeIs('aras.index')) ? 'active' : '' }}">
                                 <i class="nav-icon ion ion-stats-bars"></i>
                                 <p>Perangkingan</p>
                             </a>
