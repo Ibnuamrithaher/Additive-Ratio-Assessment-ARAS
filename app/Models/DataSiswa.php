@@ -15,4 +15,9 @@ class DataSiswa extends Model
     {
         return $this->belongsToMany(DataKriteria::class, 'datakriteria_datasiswas', 'data_siswa_id', 'data_kriteria_id', 'id', 'id')->withPivot('value');
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 }

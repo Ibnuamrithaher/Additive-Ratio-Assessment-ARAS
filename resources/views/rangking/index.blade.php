@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Data Siswa')
+@section('title', 'Perangkingan')
 @section('content')
 <div class="card">
 
@@ -34,9 +34,6 @@
                 <tr>
                     {{-- <th style="width: 10px">#</th> --}}
                     <th>Nama</th>
-                    @foreach ($datakriteria as $item)
-                    <th>{{ $item->title }}</th>
-                    @endforeach
                     <th>S<sub>i</sub></th>
                     <th>K<sub>i</sub></th>
                     <th>Rangking</th>
@@ -46,11 +43,13 @@
                 @foreach ($normalisasi as $key => $item)
                 <tr>
                     <td>{{ $item[count($item)-1] }}</td>
-                    @for ($i = 0; $i <= count($item)-2; $i++) <td>{{ $item[$i] }}</td>
-                        @endfor
+                    @for ($i = count($item)-3; $i <= count($item)-2; $i++)
+                        <td>{{ $item[$i] }}</td>
+                    @endfor
                         <td>{{ $key+1 }}</td>
                 </tr>
                 @endforeach
+
             </tbody>
         </table>
     </div>

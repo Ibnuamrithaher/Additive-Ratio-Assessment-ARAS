@@ -26,36 +26,32 @@
             </div>
         </div>
         @endif
-        <h3 class="card-title">Edit Data Siswa</h3>
+        <h3 class="card-title">Edit Users</h3>
     </div>
     <!-- /.card-header -->
     <!-- form start -->
-    <form action="{{ route('datasiswa.update', $data_siswa->id) }}" id="form_input" method="POST" autocomplete="off" enctype="multipart/form-data">
+    <form action="{{ route('users.update',$user->id) }}" id="form_input" method="POST" autocomplete="off" enctype="multipart/form-data">
         @method('PUT')
         @csrf
         <div class="card-body">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Nama</label>
-                        <input type="text" class="form-control" name="name" value="{{ $data_siswa->name }}" placeholder="Enter ..." required>
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter ..." value="{{ $user->email }}" required>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                @foreach ($data_siswa->data_kriteria as $item)
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>{{ $item->description }}</label>
-                            <input type="number" min="0" max="100" step="0.01" class="form-control" value="{{ $item->pivot->value }}" name="{{ $item->id }}" placeholder="Enter ..." required>
-                        </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="string" class="form-control" name="password" placeholder="Enter ..." value="{{ $user->key }}" required>
                     </div>
-                @endforeach
+                </div>
             </div>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-            <button type="submit" class="btn btn-default">Simpan</button>
+            <button type="submit" class="btn btn-default">Update</button>
         </div>
     </form>
 </div>

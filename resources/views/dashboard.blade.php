@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Penilaian')
+@section('title', 'Dashboard')
 @section('content')
 <div class="card">
 
@@ -29,34 +29,16 @@
         @endif
     </div>
     <div class="card-body table-responsive p-0">
-        <table class="table table-hover text-nowrap">
-            <thead>
-                <tr>
-                    {{-- <th style="width: 10px">#</th> --}}
-                    <th>Nama</th>
-                    @foreach ($datakriteria as $item)
-                    <th>{{ $item->description }}</th>
-                    @endforeach
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($normalisasi as $key => $item)
-                    @if ($key+1 == count($normalisasi))
-                        <tr class="bg-red">
-                            <td>{{ $item[count($item)-1] }}</td>
-                            @for ($i = 0; $i <= count($item)-2; $i++) <td>{{ $item[$i] }}</td>
-                                @endfor
-                        </tr>
-                    @else
-                        <tr>
-                            <td>{{ $item[count($item)-1] }}</td>
-                            @for ($i = 0; $i <= count($item)-2; $i++) <td>{{ $item[$i] }}</td>
-                                @endfor
-                        </tr>
-                    @endif
-                @endforeach
-            </tbody>
-        </table>
+        <div class="text-center">
+            <img src="{{ asset('Logo MTS Darussalam.png') }}" alt="MTS Darussalam">
+        </div>
+        <div class="text-center">
+            @foreach ($normalisasi as $key => $item)
+                @if ($item[count($item)-1] == auth()->user()->name)
+                <h1>{{ $item[count($item)-1] }} Rangking {{ $key+1 }} dari {{ count($normalisasi) }} Siswa</h1>
+                @endif
+            @endforeach
+        </div>
     </div>
     <!-- /.card-body -->
     <div class="card-footer clearfix">

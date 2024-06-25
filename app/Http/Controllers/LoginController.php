@@ -21,7 +21,11 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended(route('datakriteria.index'));
+            if (Auth::user()->level == 'Super Admin') {
+                return redirect()->intended(route('datakriteria.index'));
+            } elseif (Auth::user()->level == 'Users') {
+                return redirect()->intended(route('dashboard'));
+            }
         }
         return back()->withErrors("Email atau Password Salah !");
     }

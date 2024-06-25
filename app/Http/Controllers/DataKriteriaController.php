@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\DataKriteriaRepository;
 use Exception;
+use Illuminate\Support\Facades\Auth;
 
 class DataKriteriaController extends Controller
 {

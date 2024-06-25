@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\DataKriteria;
 use App\Models\DataSiswa;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Repositories\DataSiswaRepository;
-
+use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class DataSiswaController extends Controller
 {
@@ -49,6 +51,17 @@ class DataSiswaController extends Controller
             $data_siswa->data_kriteria()->attach([$key], ['value' => $value]);
         };
 
+        $password_random = Str::random(6);
+        $user = User::create([
+            'name' => $data_siswa->name,
+            'email' => preg_replace('/[^a-zA-Z0-9]/', '', str_replace(' ', '', $data_siswa->name)) . Carbon::now()->format('dis') . '@gmail.com',
+            'password' => bcrypt($password_random),
+            'key' => $password_random,
+            'level' => 'Users',
+        ]);
+
+        $data_siswa->user_id = $user->id;
+        $data_siswa->save();
         return redirect()->route('datasiswa.index')->withSuccess('Berhasil Menambah data !');
     }
 
@@ -76,6 +89,21 @@ class DataSiswaController extends Controller
         }
         // $data_siswa->data_kriteria()->sync([9 => ["value" => 20]]);
         $data_siswa->data_kriteria()->sync($datakriteria_datasiswa);
+
+        if (empty($data_siswa->user)) {
+            $password_random = Str::random(6);
+            $user = User::create([
+                'name' => $data_siswa->name,
+                'email' => preg_replace('/[^a-zA-Z0-9]/', '', str_replace(' ', '', $data_siswa->name)) . Carbon::now()->format('dis') . '@gmail.com',
+                'password' => bcrypt($password_random),
+                'key' => $password_random,
+                'level' => 'Users',
+            ]);
+            $data_siswa->user_id = $user->id;
+            $data_siswa->save();
+        }
+
+
         return redirect()->route('datasiswa.index')->withSuccess('Update data berhasil !');
     }
 
@@ -84,6 +112,7 @@ class DataSiswaController extends Controller
         $data_siswa = DataSiswa::findOrFail($id);
         $data_siswa->delete();
         $data_siswa->data_kriteria()->detach();
+        $data_siswa->user->delete();
         return redirect()->back()->withSuccess('Berhasil menghapus data !');
     }
 }
