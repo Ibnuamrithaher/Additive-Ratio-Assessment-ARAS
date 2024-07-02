@@ -1,3 +1,4 @@
+## Latar Belakang
 Pendidikan merupakan hal yang terpenting dalam kehidupan manusia,ini berarti 
 bahwa setiap manusia Indonesia berhak mendapatkannya dan diharapkan untuk selalu 
 berkembang didalamnya, pendidikan tidak akan ada habisnya, pendidikan secara 
@@ -63,3 +64,25 @@ MENGGUNAKAN METODE ADDITIVE RATIO ASSESSMENT (ARAS)”. Hal ini
 bertujuan agar memudahkan pihak sekolah dalam melakukan seleksi peserta didik baru 
 dan pengelompokkan kelas berdasarkan nilai-nilai calon peserta didik baru di MTs 
 Darussalam.
+
+# Requirement Tect
+- PHP ^8
+- composer ^2
+
+# Stack
+- Laravel ^8
+
+## LIBRARY
+- ADMIN LTE => Template Front End
+
+## Installation
+- Clone the repo and `cd` into it
+- import sql database to your databases;
+- Run `composer install`
+- Rename or copy `.env.example` file to `.env`
+- Run `php artisan key:generate`
+- Set your database credentials in your `.env` file
+- Run `php artisan storage:link`
+
+## RUN YOUR PROJECT
+- Run `php artisan serve`
